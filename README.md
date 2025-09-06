@@ -448,14 +448,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Contact
-
-**Your Name** - [@yourusername](https://twitter.com/yourusername) - your.email@example.com
-
-**Project Link**: [https://github.com/yourusername/cifar10-mlops-pytorch](https://github.com/yourusername/cifar10-mlops-pytorch)
-
----
-
 <div align="center">
 
 ### ⭐ Star this repository if it helped you!
