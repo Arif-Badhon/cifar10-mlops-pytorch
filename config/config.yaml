@@ -1,0 +1,24 @@
+project_name: cifar10-mlops
+seed: 42
+device: auto
+
+model:
+  name: resnet18
+  num_classes: 10
+  dropout: 0.1
+
+training:
+  epochs: 10
+  batch_size: 32
+  learning_rate: 0.001
+  validation_split: 0.2
+
+paths:
+  data: data/
+  models: artifacts/models/
+  logs: logs/
+
+experiment:
+  tracker: wandb
+  project: cifar10-quick-start
+  tags: [quick-start]

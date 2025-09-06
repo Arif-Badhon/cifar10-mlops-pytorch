@@ -1,0 +1,125 @@
+# --- Python basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging / build artifacts
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Test / coverage
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+htmlcov/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Virtual environments (venv/conda)
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+.python-version
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Env files / secrets
+.env
+.env.local
+.env.*.local
+
+# --- ML / experiments / artifacts ---
+# W&B local run logs (default ./wandb)
+wandb/
+# MLflow run directory
+mlruns/
+# TensorBoard runs
+runs/
+# Checkpoints / artifacts (store with DVC or an artifacts bucket)
+checkpoints/
+artifacts/
+*.pt
+*.pth
+
+# --- Data & DVC ---
+# DVC’s local cache and temp (DVC manages data via .dvc/.dvcignore)
+.dvc/cache/
+.dvc/tmp/
+.dvc/.lock
+
+# If any raw/processed data slip in outside DVC, keep them out of Git
+# (DVC will auto-generate .gitignore entries alongside tracked data)
+data/**/*.tmp
+data/**/*.log
+data/cifar-10-batches-py/
+
+# --- Docker / containers (optional) ---
+*.log
+
+# Large files that should use DVC instead
+*.tar.gz
+*.zip
+*.exe
+*.deb
+*.rpm
+*.dmg
+*.iso
+
+# Model files (use DVC)
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+
+# Data files (use DVC)
+*.csv
+*.parquet
+*.json
+data/
+datasets/
+*.db
+*.sqlite
+
+# Artifacts (use DVC)
+artifacts/
+checkpoints/
+models/
+outputs/
